@@ -22,11 +22,11 @@ public class DigitSum {
      */
     public static int digitSum(int n) {
         // TODO: complete
-        String digits = Integer.toString(Math.abs(n));
         int totalSum = 0;
-        for (int i = 0; i < digits.length(); i++) {
-            totalSum += Integer.parseInt(Character.toString(digits.charAt(i)));
+        while (n != 0) {
+            totalSum += (n % 10);
+            n /= 10;
         }
-        return totalSum;
+        return Math.abs(totalSum);
     }
 }

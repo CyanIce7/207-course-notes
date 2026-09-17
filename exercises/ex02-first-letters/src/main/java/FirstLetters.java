@@ -26,7 +26,7 @@ public class FirstLetters {
      */
     public static String firstLetters(String words) {
         // TODO: complete
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
         String[] wordsArr = words.split("\\s+");
         for (String s: wordsArr) {
             sb.append(s, 0, 1);
